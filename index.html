@@ -18,58 +18,60 @@
         <h2>Guess the word related to computer programming!</h2>
     </div>
 
-    <!-- place all content in one row -->
-    <div class="row">
-        
-        <div class="col-md-12">
+    <div class="container">
 
-            <!-- card to hold the word to guess -->
-            <div class="card">
-               
-                <div class="card-header">
-                    <h3 class="card-title">Word to Guess</h3>
+        <!-- place all content in one row -->
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <!-- card to hold the word to guess -->
+                <div class="card">
+
+                    <div class="card-header">
+                        <h3 class="card-title">Word to Guess</h3>
+                    </div>
+
+                    <div class="card-body">
+                        <h3 id="word-blanks"></h3>
+                    </div>
+
                 </div>
-               
-                <div class="card-body">
-                    <h3 id="word-blanks"></h3>
+
+                <!-- card to display wrong guesses -->
+                <div class="card">
+
+                    <div class="card-body">
+                        Wrong Guesses : <span id="wrong-guesses"></span>
+                    </div>
+
                 </div>
-           
+
+                <!-- card to display guesses left -->
+                <div class="card">
+                    <div class="card-body">
+                        Guesses Left : <span id="guesses-left">10</span>
+                    </div>
+                </div>
+
+                <!-- card to display wins -->
+                <div class="card">
+                    <div class="card-body">
+                        Wins : <span id="win-counter">0</span>
+                    </div>
+                </div>
+
+                <!-- card to display losses -->
+                <div class="card">
+                    <div class="card-body">
+                        Losses : <span id="losses-counter">0</span>
+                    </div>
+                </div>
+
             </div>
-
-            <!-- card to display wrong guesses -->
-            <div class="card">
-               
-                <div class="card-body">
-                    Wrong Guesses : <span id="wrong-guesses"></span>
-                </div>
-           
-            </div>
-
-            <!-- card to display guesses left -->
-            <div class="card">
-                <div class="card-body">
-                    Guesses Left : <span id="guesses-left">10</span>
-                </div>
-            </div>
-
-            <!-- card to display wins -->
-            <div class="card">
-                <div class="card-body">
-                    Wins : <span id="win-counter">0</span>
-                </div>
-            </div>
-
-            <!-- card to display losses -->
-            <div class="card">
-                <div class="card-body">
-                    Losses : <span id="losses-counter">0</span>
-                </div>
-            </div>
-
         </div>
+
     </div>
-
-
 
 
     <!-- my logic -->
