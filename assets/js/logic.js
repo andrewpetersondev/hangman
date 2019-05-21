@@ -16,7 +16,7 @@ var numBlanks = 0;
 var blanksAndSuccesses = [];
 
 // holds the letters guessed
-var lettersGuessed = "";
+var letterGuessed = "";
 
 // holds all the wrong guesses
 var wrongGuesses = [];
@@ -179,9 +179,16 @@ function roundComplete() {
 startGame();
 
 // initiate function for capturing key clicks
+document.onkeyup = function(event) {
 
 // convert all key clicks to lowercase letters
+letterGuessed = String.fromCharCode(event.which).toLowerCase(); 
 
 // run the function that checks for correct guesses
+checkLetters(letterGuessed);
 
 // run the function that ends each round
+roundComplete();
+
+};
+
